@@ -1,0 +1,22 @@
+body {
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+#map
+{
+    height: 900px;
+}
+
+.page
+{
+    margin-left: -15px;
+}
+
+.form
+{
+    display: none;
+}

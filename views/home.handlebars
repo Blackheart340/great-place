@@ -1,0 +1,36 @@
+<div class="container-fluid page">
+    <div class="row">
+        <div class="col-md-6">
+            <div id="map"></div>
+        </div>
+        <div class="col-md-6">
+            <h1>Great Place</h1>
+            <h2>{{title}}</h2>
+
+            <div class="form">
+                <input class="long" type="hidden" name="f-long" id="long"/>
+                <input class="lat" type="hidden" name="f-lat" id="lat"/>
+                <div class="form-group">
+                    <label for="f-title"></label>
+                    <input type="text" class="form-control" id="f-title" name="f-title" placeholder="Title">
+                </div>
+                <div class="form-group">
+                    <label for="f-desc"></label>
+                    <input type="text" class="form-control" id="f-desc" name="f-desc" placeholder="Description">
+                </div>
+                <div class="form-group">
+                    <label for="f-author"></label>
+                    <input type="text" class="form-control" id="f-author" name="f-author" placeholder="Author">
+                </div>
+                <div class="form-group">
+                    <input type="submit" value="Send" class="btn btn-default btn-primary send"/>
+                </div>
+            </div>
+
+            <h2>Dot List</h2>
+            <div class="list">
+                {{#each dots}}<div class="item" data-lat="{{lat}}" data-long="{{long}}">Author: {{author}}; Title: {{title}}; Desc: {{description}} <i class="glyphicon glyphicon-remove"></i></div>{{/each}}
+            </div>
+        </div>
+    </div>
+</div>
